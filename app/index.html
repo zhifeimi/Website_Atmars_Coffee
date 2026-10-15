@@ -6,6 +6,11 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content="Atmars — a virtual café (fictional demo site). Award-winning house-roasted coffee, all-day breakfast, house-made waffles & pancakes." />
     <title>Atmars — Honest Coffee. Honest Food.</title>
+    <!-- Home-only hero preload (SPA shares this file across routes) -->
+    <script>
+      if (location.pathname === "/")
+        document.head.insertAdjacentHTML("beforeend", '<link rel="preload" as="image" href="/images/hero-iced-palms.jpg" fetchpriority="high">');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

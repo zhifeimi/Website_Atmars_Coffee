@@ -44,6 +44,7 @@ export default function Hero() {
           { yPercent: 0, rotate: 0, opacity: 1, stagger: 0.025, duration: 0.9 },
           0.35,
         )
+        .from("[data-hero-sub]", { y: 20, duration: 0.8 }, 0.35)
         .fromTo(
           "[data-hero-fade]",
           { opacity: 0, y: 30 },
@@ -93,6 +94,7 @@ export default function Hero() {
         <img
           data-hero-bg
           src="/images/hero-iced-palms.jpg"
+          fetchPriority="high"
           alt="Iced coffee against palm trees on a bright summer day"
           className="h-full w-full object-cover"
         />
@@ -130,9 +132,10 @@ export default function Hero() {
             <br />
             Honest <em className="italic text-butterscotch">Food.</em>
           </h1>
+          {/* Visible from first paint: this is the LCP element, so only slide it. */}
           <p
-            data-hero-fade
-            className="mt-6 max-w-[52ch] font-sans text-xl font-light leading-[1.65] text-cream/90 opacity-0"
+            data-hero-sub
+            className="mt-6 max-w-[52ch] font-sans text-xl font-light leading-[1.65] text-cream/90"
           >
             Award-winning house-roasted coffee, all-day breakfast and our famous
             waffles — served with a smile inside Null Island Mall.
