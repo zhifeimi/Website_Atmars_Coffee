@@ -1,10 +1,13 @@
+import { lazy } from "react";
 import { Routes, Route } from "react-router";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
-import Menu from "@/pages/Menu";
-import About from "@/pages/About";
-import Gallery from "@/pages/Gallery";
-import Visit from "@/pages/Visit";
+
+// Home ships in the main bundle; other pages load on demand.
+const Menu = lazy(() => import("@/pages/Menu"));
+const About = lazy(() => import("@/pages/About"));
+const Gallery = lazy(() => import("@/pages/Gallery"));
+const Visit = lazy(() => import("@/pages/Visit"));
 
 export default function App() {
   return (

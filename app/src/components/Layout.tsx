@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { Outlet, useLocation } from "react-router";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -28,7 +28,10 @@ export default function Layout() {
     <div className="min-h-[100dvh] bg-cream">
       <Navbar />
       <main className="pt-16 md:pt-20">
-        <Outlet />
+        {/* Keeps nav/footer mounted while a lazy page chunk loads. */}
+        <Suspense fallback={<div className="min-h-[100svh]" />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
     </div>
