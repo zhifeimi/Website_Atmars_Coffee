@@ -16,6 +16,7 @@ export default function Hero() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) {
+        gsap.set(h1Ref.current, { opacity: 1 });
         gsap.set("[data-hero-fade]", { opacity: 1, y: 0 });
         return;
       }
@@ -25,6 +26,8 @@ export default function Hero() {
         charsClass: "hero-char",
       });
       gsap.set(split.chars, { yPercent: 110, rotate: 6, opacity: 0 });
+      // h1 ships hidden (prerendered HTML) so the chars never flash before the intro.
+      gsap.set(h1Ref.current, { opacity: 1 });
 
       const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
       tl.fromTo(
@@ -44,7 +47,6 @@ export default function Hero() {
           { yPercent: 0, rotate: 0, opacity: 1, stagger: 0.025, duration: 0.9 },
           0.35,
         )
-        .from("[data-hero-sub]", { y: 20, duration: 0.8 }, 0.35)
         .fromTo(
           "[data-hero-fade]",
           { opacity: 0, y: 30 },
@@ -126,15 +128,14 @@ export default function Hero() {
           </span>
           <h1
             ref={h1Ref}
-            className="mt-6 overflow-hidden font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream"
+            className="mt-6 overflow-hidden font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream opacity-0"
           >
             Honest Coffee.
             <br />
             Honest <em className="italic text-butterscotch">Food.</em>
           </h1>
-          {/* Visible from first paint: this is the LCP element, so only slide it. */}
+          {/* Not animated: this is the LCP element, visible from first paint. */}
           <p
-            data-hero-sub
             className="mt-6 max-w-[52ch] font-sans text-xl font-light leading-[1.65] text-cream/90"
           >
             Award-winning house-roasted coffee, all-day breakfast and our famous

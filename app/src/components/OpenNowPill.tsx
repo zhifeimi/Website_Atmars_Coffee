@@ -4,13 +4,16 @@ import { getOpenState } from "@/lib/site";
 
 /** Live open/closed pill computed from local time vs trading hours. */
 export default function OpenNowPill({ className }: { className?: string }) {
-  const [state, setState] = useState(() => getOpenState());
+  // Null until mounted: prerendered HTML can't know the visitor's clock.
+  const [state, setState] = useState<ReturnType<typeof getOpenState> | null>(null);
 
   useEffect(() => {
+    setState(getOpenState());
     const id = window.setInterval(() => setState(getOpenState()), 60_000);
     return () => window.clearInterval(id);
   }, []);
 
+  if (!state) return null;
   return (
     <span
       className={cn(

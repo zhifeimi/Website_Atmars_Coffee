@@ -5,11 +5,13 @@ import { inspectAttr } from 'plugin-inspect-react-code'
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  base: './',
+  base: '/', // absolute: prerendered pages live in subfolders (dist/menu/index.html)
   plugins: [command === "serve" && inspectAttr(), react()],
   server: {
     port: 3000,
   },
+  // Bundle deps into the SSR build so Node can run it without ESM resolution quirks.
+  ssr: { noExternal: true },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

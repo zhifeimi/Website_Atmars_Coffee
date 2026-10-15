@@ -18,6 +18,7 @@ export default function VisitHero() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) {
+        gsap.set(h1Ref.current, { opacity: 1 });
         gsap.set("[data-visit-bg]", { opacity: 0.18, x: 0 });
         gsap.set("[data-visit-rule]", { scaleX: 1 });
         gsap.set("[data-visit-fade]", { opacity: 1, y: 0 });
@@ -27,6 +28,8 @@ export default function VisitHero() {
 
       const split = new SplitText(h1Ref.current, { type: "chars" });
       gsap.set(split.chars, { yPercent: 110, rotate: 6, opacity: 0 });
+      // h1 ships hidden (prerendered HTML) so the chars never flash before the intro.
+      gsap.set(h1Ref.current, { opacity: 1 });
 
       const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
       tl.fromTo(
@@ -113,7 +116,7 @@ export default function VisitHero() {
           </span>
           <h1
             ref={h1Ref}
-            className="mt-6 overflow-hidden whitespace-pre-wrap pb-[0.15em] -mb-[0.15em] font-display text-[clamp(2.75rem,6vw,5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream"
+            className="mt-6 overflow-hidden whitespace-pre-wrap pb-[0.15em] -mb-[0.15em] font-display text-[clamp(2.75rem,6vw,5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream opacity-0"
           >
             Right in the{" "}
             <em className="italic text-butterscotch">heart of Null Island.</em>

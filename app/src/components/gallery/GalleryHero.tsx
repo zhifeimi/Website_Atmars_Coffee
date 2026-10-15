@@ -14,6 +14,7 @@ export default function GalleryHero() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) {
+        gsap.set(h1Ref.current, { opacity: 1 });
         gsap.set("[data-gal-fade]", { opacity: 1, y: 0 });
         return;
       }
@@ -23,6 +24,8 @@ export default function GalleryHero() {
         charsClass: "gallery-hero-char",
       });
       gsap.set(split.chars, { yPercent: 110, rotate: 6, opacity: 0 });
+      // h1 ships hidden (prerendered HTML) so the chars never flash before the intro.
+      gsap.set(h1Ref.current, { opacity: 1 });
 
       const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
       tl.fromTo(
@@ -91,7 +94,7 @@ export default function GalleryHero() {
         </span>
         <h1
           ref={h1Ref}
-          className="mx-auto mt-6 overflow-hidden whitespace-pre-wrap pb-[0.15em] -mb-[0.15em] font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream"
+          className="mx-auto mt-6 overflow-hidden whitespace-pre-wrap pb-[0.15em] -mb-[0.15em] font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream opacity-0"
         >
           The <em className="italic text-butterscotch">good stuff.</em>
         </h1>

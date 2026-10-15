@@ -7,11 +7,14 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 function OpenBadge() {
-  const [state, setState] = useState(() => getOpenState());
+  // Null until mounted: prerendered HTML can't know the visitor's clock.
+  const [state, setState] = useState<ReturnType<typeof getOpenState> | null>(null);
   useEffect(() => {
+    setState(getOpenState());
     const id = window.setInterval(() => setState(getOpenState()), 60_000);
     return () => window.clearInterval(id);
   }, []);
+  if (!state) return null;
   return (
     <span
       className={cn(

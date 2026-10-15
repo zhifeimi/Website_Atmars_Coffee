@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import {
   MapPin,
@@ -73,7 +73,9 @@ function CardShell({
 
 /** Info cards — where / when / say g'day (visit.md §2). */
 export default function InfoCards() {
-  const today = new Date().getDay();
+  // Set after mount: prerendered HTML can't know the visitor's day.
+  const [today, setToday] = useState<number | null>(null);
+  useEffect(() => setToday(new Date().getDay()), []);
   const gridRef = useRef<HTMLDivElement>(null);
   const inView = useInView(gridRef, { once: true, margin: "-12%" });
 

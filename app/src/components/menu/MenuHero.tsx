@@ -16,6 +16,7 @@ export default function MenuHero() {
   useGSAP(
     () => {
       if (prefersReducedMotion()) {
+        gsap.set(h1Ref.current, { opacity: 1 });
         gsap.set("[data-hero-fade]", { opacity: 1, y: 0 });
         return;
       }
@@ -25,6 +26,8 @@ export default function MenuHero() {
         charsClass: "hero-char",
       });
       gsap.set(split.chars, { yPercent: 110, rotate: 6, opacity: 0 });
+      // h1 ships hidden (prerendered HTML) so the chars never flash before the intro.
+      gsap.set(h1Ref.current, { opacity: 1 });
 
       const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
       tl.fromTo(
@@ -100,7 +103,7 @@ export default function MenuHero() {
         </span>
         <h1
           ref={h1Ref}
-          className="mt-6 overflow-hidden font-display text-[clamp(3rem,6vw,5.5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream"
+          className="mt-6 overflow-hidden font-display text-[clamp(3rem,6vw,5.5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream opacity-0"
         >
           The <em className="italic text-butterscotch">Menu</em>
         </h1>
