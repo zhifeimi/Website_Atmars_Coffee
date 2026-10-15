@@ -86,7 +86,7 @@ export default function GalleryHero() {
       <div className="container-site relative z-10 pb-14 pt-32 text-center md:pt-36">
         <span className="inline-flex items-center gap-4 font-sans text-xs font-semibold uppercase tracking-[0.28em] text-gold">
           <span data-gal-rule className="block h-[1.5px] w-12 bg-gold" />
-          Gallery · Ariel's Dapto
+          Gallery · Atmars
           <span data-gal-rule className="block h-[1.5px] w-12 bg-gold" />
         </span>
         <h1
@@ -99,8 +99,8 @@ export default function GalleryHero() {
           data-gal-fade
           className="mx-auto mt-5 max-w-[52ch] font-sans text-xl font-light leading-[1.65] text-cream/85 opacity-0"
         >
-          Real plates, real pours, real locals — straight from the kiosk at
-          Dapto Mall.
+          Fresh plates, careful pours, happy locals — straight from the kiosk at
+          Null Island Mall.
         </p>
       </div>
     </section>

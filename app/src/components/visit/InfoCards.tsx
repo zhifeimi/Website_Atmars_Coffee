@@ -109,8 +109,8 @@ export default function InfoCards() {
         {/* Where */}
         <CardShell index={0} icon={MapPin} title="Where">
           <p className="mt-4 font-sans text-base leading-[1.7] text-navy-ink/80">
-            Ground Floor, Kiosk K105, Dapto Mall, 75–87 Princes Highway, Dapto
-            NSW 2530
+            Ground Floor, Kiosk K105, Null Island Mall, 1 Virtual Street, Null Island
+            0000
           </p>
           <a
             href={SITE.maps}
@@ -199,7 +199,7 @@ export default function InfoCards() {
               href={SITE.instagram}
               target="_blank"
               rel="noreferrer"
-              aria-label="Ariel's Dapto on Instagram"
+              aria-label="Atmars on Instagram"
               className="grid h-11 w-11 place-items-center rounded-full border-[1.5px] border-gold text-gold transition-all duration-300 hover:bg-gold hover:text-navy-ink"
             >
               <Instagram className="h-5 w-5" />
@@ -208,7 +208,7 @@ export default function InfoCards() {
               href={SITE.facebook}
               target="_blank"
               rel="noreferrer"
-              aria-label="Ariel's Dapto on Facebook"
+              aria-label="Atmars on Facebook"
               className="grid h-11 w-11 place-items-center rounded-full border-[1.5px] border-gold text-gold transition-all duration-300 hover:bg-gold hover:text-navy-ink"
             >
               <Facebook className="h-5 w-5" />

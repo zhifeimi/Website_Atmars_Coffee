@@ -92,7 +92,7 @@ export default function Story() {
           >
             <img
               src="/images/hero-girl-cup.jpg"
-              alt="A customer enjoying an Ariel's coffee in the sun"
+              alt="A customer enjoying an Atmars coffee in the sun"
               className="h-[380px] w-full scale-[1.15] object-cover md:h-[480px]"
               loading="lazy"
             />
@@ -103,7 +103,7 @@ export default function Story() {
           >
             <img
               src="/images/latte-pour.jpg"
-              alt="The navy Ariel's takeaway cup, out and about"
+              alt="The navy Atmars takeaway cup, out and about"
               className="h-48 w-full object-cover md:h-60"
               loading="lazy"
             />
@@ -113,7 +113,7 @@ export default function Story() {
             className="absolute -bottom-6 left-4 font-hand text-2xl text-butterscotch"
             style={{ transform: "rotate(-3deg)" }}
           >
-            since 2015
+            since 2019
           </span>
         </div>
 
@@ -125,21 +125,21 @@ export default function Story() {
             <em className="italic text-caramel">grew with its locals.</em>
           </h2>
           <p className="mt-6 max-w-[58ch] font-sans text-[1.05rem] leading-[1.7] text-navy-ink/80">
-            Ariel's — My Local Café began in 2015 with one simple idea: the
-            Illawarra deserved a café that felt like home. Family-owned from
+            Atmars — A Virtual Café began in 2019 with one simple idea: the
+            island deserved a café that felt like home. Family-owned from
             day one, we built our name on generous plates, properly made
             coffee, and remembering your usual order.
           </p>
           <p className="mt-5 max-w-[58ch] font-sans text-[1.05rem] leading-[1.7] text-navy-ink/80">
-            Today there are seven Ariel's cafés across the region — and each
+            Today there are three Atmars cafés across the region — and each
             one still runs on the same recipe: honest food, honest coffee,
             honest people.
           </p>
           <p className="mt-5 max-w-[58ch] font-sans text-[1.05rem] leading-[1.7] text-navy-ink/80">
-            In December 2022 we opened our Dapto kiosk inside Dapto Mall,
-            right near Coles — bringing the full Ariel's experience to the
-            heart of Dapto: all-day breakfast, house-made waffles, and
-            award-winning Campos coffee, seven days a week.
+            In March 2023 we opened our Null Island kiosk inside Null Island Mall,
+            right near the food court — bringing the full Atmars experience to the
+            heart of Null Island: all-day breakfast, house-made waffles, and
+            award-winning house-roasted coffee, seven days a week.
           </p>
           <Link to="/menu" className="btn-ghost-navy group mt-9">
             See what's on the menu

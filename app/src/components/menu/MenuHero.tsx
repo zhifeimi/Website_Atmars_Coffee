@@ -95,7 +95,7 @@ export default function MenuHero() {
       <div className="container-site relative z-10 pb-16 pt-32 text-center md:pt-36">
         <span className="inline-flex items-center gap-4 font-sans text-xs font-semibold uppercase tracking-[0.28em] text-gold">
           <span data-hero-rule className="block h-[1.5px] w-12 bg-gold" />
-          Ariel's Dapto · Served All Day
+          Atmars · Served All Day
           <span data-hero-rule className="block h-[1.5px] w-12 bg-gold" />
         </span>
         <h1
@@ -109,7 +109,7 @@ export default function MenuHero() {
           className="mx-auto mt-6 max-w-[56ch] font-sans text-xl font-light leading-[1.65] text-cream/85 opacity-0"
         >
           All-day breakfast, house-made waffles, burgers and award-winning
-          Campos coffee. Prices as marked in-store; delivery platforms may
+          house-roasted coffee. Prices as marked in-store; delivery platforms may
           vary.
         </p>
         <div

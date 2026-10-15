@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const ITEMS = [
-  "Campos Coffee",
+  "House-Roasted Coffee",
   "All-Day Breakfast",
   "House-Made Waffles",
-  "Buttermilk Pancakes",
+  "Ricotta Hotcakes",
   "Breakfast Burritos",
   "Fresh Smoothies",
   "Free-Range Eggs",

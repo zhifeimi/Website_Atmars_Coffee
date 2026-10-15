@@ -22,7 +22,7 @@ export default function Story() {
             transition={{ duration: 0.6, ease: EASE }}
             className="eyebrow eyebrow-on-cream"
           >
-            Welcome to Ariel's Dapto
+            Welcome to Atmars
           </motion.span>
 
           <motion.h2
@@ -32,7 +32,7 @@ export default function Story() {
             transition={{ duration: 0.9, delay: 0.08, ease: EASE }}
             className="mt-5 max-w-[20ch] font-display text-[clamp(2.25rem,4.5vw,3.75rem)] font-semibold leading-[1.08] text-navy"
           >
-            Your local café, <em className="italic text-caramel">right inside</em> Dapto Mall.
+            Your local café, <em className="italic text-caramel">right inside</em> Null Island Mall.
           </motion.h2>
 
           <motion.div
@@ -45,11 +45,11 @@ export default function Story() {
             <motion.p
               variants={{ hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE } } }}
             >
-              Since 2015, Ariel's has been the Illawarra's local café —
+              Since 2019, Atmars has been the island's local café —
               family-owned, community-first, and obsessed with doing the simple
-              things brilliantly. Our Dapto kiosk opened in December 2022,
-              bringing the same generous plates and award-winning Campos coffee
-              to Kiosk K105, near Coles.
+              things brilliantly. Our Null Island kiosk opened in March 2023,
+              bringing the same generous plates and award-winning house-roasted coffee
+              to Kiosk K105, near the food court.
             </motion.p>
             <motion.p
               variants={{ hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: EASE } } }}
@@ -95,8 +95,8 @@ export default function Story() {
             className="relative"
           >
             <img
-              src="/images/dapto-flatlay.png"
-              alt="The Dapto breakfast spread — waffles, eggs benedict and granola on the table"
+              src="/images/breakfast-flatlay.jpg"
+              alt="The Null Island breakfast spread — waffles, eggs benedict and granola on the table"
               className="w-full rounded-[2rem] object-cover shadow-card-warm"
               loading="lazy"
             />

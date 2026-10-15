@@ -9,12 +9,12 @@ import CoffeeRing from "@/components/CoffeeRing";
 gsap.registerPlugin(ScrollTrigger);
 
 const FACTS = [
-  { icon: Award, text: "Award-winning Campos Coffee" },
+  { icon: Award, text: "Award-winning house-roasted coffee" },
   { icon: Coffee, text: "La Marzocco machine" },
-  { icon: CupSoda, text: "Chai called Australia's favourite" },
+  { icon: CupSoda, text: "Chai brewed from whole spices" },
 ];
 
-/** About §5 — The craft: Campos & La Marzocco (navy-deep). */
+/** About §5 — The craft: house roast & La Marzocco (navy-deep). */
 export default function Craft() {
   const root = useRef<HTMLElement>(null);
 
@@ -93,8 +93,8 @@ export default function Craft() {
               <em className="italic text-butterscotch">no accident.</em>
             </h2>
             <p className="mt-5 max-w-[50ch] font-sans text-[1.05rem] leading-[1.7] text-cream/85">
-              We chose Campos because they obsess over coffee the way we obsess
-              over breakfast. Their award-winning beans meet our La Marzocco
+              We roast our own beans because we obsess over coffee the way we obsess
+              over breakfast. Our award-winning house roast meets the La Marzocco
               every morning, dialled in by hand before the first flat white
               leaves the machine.
             </p>

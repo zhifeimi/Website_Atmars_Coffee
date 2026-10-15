@@ -3,10 +3,10 @@ import { useGSAP } from "@gsap/react";
 import { gsap, prefersReducedMotion } from "@/hooks/use-lenis";
 
 const STATS = [
-  { value: 2015, format: (v: number) => String(Math.round(v)), label: "Family owned since" },
-  { value: 7, format: (v: number) => String(Math.round(v)), label: "Illawarra locations" },
-  { value: 4.6, format: (v: number) => `${v.toFixed(1)}★`, label: "DoorDash rating (200+ reviews)" },
-  { value: 100, format: (v: number) => `${Math.round(v)}%`, label: "Campos coffee, always" },
+  { value: 2019, format: (v: number) => String(Math.round(v)), label: "Family owned since" },
+  { value: 7, format: (v: number) => String(Math.round(v)), label: "Island locations" },
+  { value: 1200, format: (v: number) => Math.round(v).toLocaleString("en-AU"), label: "Coffees poured every week" },
+  { value: 100, format: (v: number) => `${Math.round(v)}%`, label: "House-roasted coffee, always" },
 ];
 
 /** Stats band with count-up numerals (home.md §5). */

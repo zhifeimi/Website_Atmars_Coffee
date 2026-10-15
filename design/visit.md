@@ -18,9 +18,9 @@ The conversion page: everything a hungry local needs to get to the kiosk or get 
 **Layout:** Navy-deep, ~48vh. Background `/images/takeaway-cup.jpg` at 18% opacity right-aligned (masked with a left-to-right navy gradient so text side stays clean), grain.
 
 **Content (left-aligned, max 640px):**
-- Eyebrow: `VISIT · DAPTO MALL`
-- H1: "Right in the *heart of Dapto.*" ("heart of Dapto" italic butterscotch)
-- Subcopy: "Kiosk K105, Ground Floor, Dapto Mall — near Coles. Come hungry."
+- Eyebrow: `VISIT · NULL ISLAND MALL`
+- H1: "Right in the *heart of Null Island.*" ("heart of Null Island" italic butterscotch)
+- Subcopy: "Kiosk K105, Ground Floor, Null Island Mall — near the food court. Come hungry."
 - Live status pill: "Open now · closes 4:00pm" / "Closed · opens 8:00am tomorrow" — glass navy chip, pulsing gold dot when open, berry dot when closed. Computed from local time against hours (Mon & Sun 8:00–15:00; Tue–Sat 8:00–16:00).
 
 **Animation:** H1 char-split; background image slides in from right (x 80px→0, opacity, 1s) + slow drift parallax. Status pill pops (scale 0.8→1 spring) at 0.6s, dot pulses 2s loop.
@@ -31,10 +31,10 @@ The conversion page: everything a hungry local needs to get to the kiosk or get 
 
 **Layout:** Cream. Three cards across (stack mobile), cream-warm cards rounded-[2rem], gold hairline top, centered icon + content:
 
-1. **Where** (map-pin icon) — "Ground Floor, Kiosk K105, Dapto Mall, 75–87 Princes Highway, Dapto NSW 2530" + text link "Get directions ↗" (https://maps.app.goo.gl/BZKcT9zeDjAtWoPG9, gold, underline on hover).
+1. **Where** (map-pin icon) — "Ground Floor, Kiosk K105, Null Island Mall, 1 Virtual Street, Null Island 0000" + text link "Get directions ↗" (https://www.google.com/maps?q=0,0, gold, underline on hover).
 2. **When** (clock icon) — full hours table (Inter, tabular numerals):
    Mon 8:00am–3:00pm · Tue 8:00am–4:00pm · Wed 8:00am–4:00pm · Thu 8:00am–4:00pm · Fri 8:00am–4:00pm · Sat 8:00am–4:00pm · Sun 8:00am–3:00pm. Today's row highlighted: gold-tinted background, "today" chip.
-3. **Say g'day** (phone icon) — "0414 329 909" (tel link, Cormorant 600 1.5rem espresso) · "hello@arielscoffee.com.au" (mailto link) · social icon buttons (Instagram, Facebook).
+3. **Say g'day** (phone icon) — "xxxxxxxx" (tel link, Cormorant 600 1.5rem espresso) · "hello@atmars.example" (mailto link) · social icon buttons (Instagram, Facebook).
 
 **Animation:** cards stagger up (y 48px, 0.12s), icons draw (stroke-dashoffset 0.8s). Hours table rows cascade 0.05s after card lands. "Today" highlight sweeps in (background scaleX 0→1). Hover: cards lift -6px, icons tint caramel.
 
@@ -44,15 +44,15 @@ The conversion page: everything a hungry local needs to get to the kiosk or get 
 
 **Layout:** Cream-warm. Split 55/45: left embedded map, right "getting here" content.
 
-**Left:** Map panel (rounded-[2rem], overflow hidden, gold 1px hairline frame, shadow): Google Maps iframe embed for "Ariel's Dapto, Dapto Mall, 75-87 Princes Hwy, Dapto NSW 2530" (use the place from https://maps.app.goo.gl/BZKcT9zeDjAtWoPG9). Fallback: static-styled navy panel with big map-pin + "Open in Google Maps ↗" button if iframe blocked.
+**Left:** Map panel (rounded-[2rem], overflow hidden, gold 1px hairline frame, shadow): Google Maps iframe embed for "Atmars, Null Island Mall, 1 Virtual Street, Null Island 0000" (use the place from https://www.google.com/maps?q=0,0). Fallback: static-styled navy panel with big map-pin + "Open in Google Maps ↗" button if iframe blocked.
 
 **Right:**
 - Eyebrow: `GETTING HERE`
 - H2: "Easy to find, *hard to leave.*"
 - Bullet list (gold icons + Inter):
-  - **In the mall:** "We're on the Ground Floor at Kiosk K105, right near Coles."
-  - **Parking:** "Free undercover parking at Dapto Mall — enter off the Princes Highway."
-  - **By train:** "Dapto Station is a short ride away; buses stop at the mall interchange."
+  - **In the mall:** "We're on the Ground Floor at Kiosk K105, right near the food court."
+  - **Parking:** "Free undercover parking at Null Island Mall — enter off Virtual Street."
+  - **By train:** "Null Island Station is a short ride away; buses stop at the mall interchange."
   - **Prams & wheelchairs:** "Step-free access throughout the centre — bring the whole crew."
 - Caveat annotation: "look for the navy & gold kiosk" (butterscotch, rotated -3°).
 
@@ -67,11 +67,11 @@ The conversion page: everything a hungry local needs to get to the kiosk or get 
 **Content (centered):**
 - Eyebrow (gold): `ORDER AHEAD & DELIVERY`
 - H2 (Cormorant cream, clamp(2rem, 4vw, 3rem)): "Your order, *your way.*"
-- Subcopy: "Skip the queue with order-ahead, or get Ariel's delivered to your door."
+- Subcopy: "Skip the queue with order-ahead, or get Atmars delivered to your door."
 - **Platform grid (2×2 desktop, stack mobile — large clickable cards, glass navy, gold hairline, rounded-2xl):**
-  1. **Bopple** — "Order ahead & skip the queue" — badge: "our preferred pickup partner" — https://www.bopple.app/arielsdapto/menu (this card gets gold fill treatment — the hero action)
-  2. **Uber Eats** — "Delivery · rated 4.5★ (180+ reviews)"
-  3. **DoorDash** — "Delivery · rated 4.6★ (200+ reviews)"
+  1. **Bopple** — "Order ahead & skip the queue" — badge: "our preferred pickup partner" — https://www.bopple.app/ (this card gets gold fill treatment — the hero action)
+  2. **Uber Eats** — "Delivery"
+  3. **DoorDash** — "Delivery"
   4. **Hey You** — "Order ahead & earn on every coffee"
 - Small print: "Delivery platform prices may differ from in-store menu."
 
@@ -92,10 +92,10 @@ The conversion page: everything a hungry local needs to get to the kiosk or get 
 **Layout:** Cream-warm, max-width 800px centered. Header: eyebrow `GOOD TO KNOW`, H2 "Quick *answers.*" shadcn Accordion restyled: items separated by gold hairlines, question in Cormorant 600 1.375rem espresso, gold chevron rotating 180° on open.
 
 **Items:**
-1. **"Do you serve breakfast all day?"** — "Yes — the full breakfast menu runs from open to close, seven days. Big Breakfast at 2:45pm? Absolutely."
-2. **"What coffee do you use?"** — "Award-winning Campos Coffee, poured on our La Marzocco. We also do a chai that's been called Australia's favourite."
+1. **"Do you serve breakfast all day?"** — "Yes — the full breakfast menu runs from open to close, seven days. Island Big Breakfast at 2:45pm? Absolutely."
+2. **"What coffee do you use?"** — "Award-winning house-roasted coffee, poured on our La Marzocco. We also brew our own chai from whole spices."
 3. **"Can I order ahead?"** — "Yes — order on Bopple or Hey You and skip the queue, or get delivery via Uber Eats and DoorDash."
-4. **"Is there parking?"** — "Free undercover parking at Dapto Mall, off the Princes Highway. We're on the Ground Floor near Coles."
+4. **"Is there parking?"** — "Free undercover parking at Null Island Mall, off Virtual Street. We're on the Ground Floor near the food court."
 5. **"Do you cater for kids?"** — "We do — kids' menu items, babycinos, and a team that's famously patient with little ones (our reviewers say so)."
 6. **"When is Mum's Café Day?"** — "Every second Tuesday of the month — mums with prams get a free coffee on us."
 

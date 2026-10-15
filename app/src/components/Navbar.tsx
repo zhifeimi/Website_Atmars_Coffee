@@ -17,10 +17,10 @@ export function LogoLockup({ className }: { className?: string }) {
   return (
     <span className={cn("flex flex-col leading-none", className)}>
       <span className="font-display text-[1.65rem] font-semibold tracking-[0.06em] text-cream">
-        ARIEL'S
+        ATMARS
       </span>
       <span className="mt-1 font-sans text-[9px] font-semibold uppercase tracking-[0.3em] text-gold">
-        Dapto · Est 2015
+        Virtual Café · Est 2019
       </span>
     </span>
   );
@@ -51,7 +51,7 @@ export default function Navbar() {
         )}
       >
         <div className="container-site flex h-16 items-center justify-between md:h-20">
-          <Link to="/" aria-label="Ariel's Dapto — home">
+          <Link to="/" aria-label="Atmars — home">
             <LogoLockup />
           </Link>
 
@@ -168,7 +168,7 @@ export default function Navbar() {
                 <a
                   href={SITE.phoneHref}
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/60 text-gold"
-                  aria-label="Call Ariel's Dapto"
+                  aria-label="Call Atmars"
                 >
                   <Phone className="h-4 w-4" />
                 </a>

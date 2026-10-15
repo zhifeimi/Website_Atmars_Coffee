@@ -8,11 +8,11 @@ import { gsap, prefersReducedMotion } from "@/hooks/use-lenis";
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const IMAGES = [
-  { src: "/images/latte-pour.jpg", alt: "Ariel's navy takeaway cup outdoors" },
-  { src: "/images/pancakes.jpg", alt: "Buttermilk pancakes with berries" },
-  { src: "/images/cafe-counter-customers.jpg", alt: "Ariel's Dapto kiosk counter with customers" },
+  { src: "/images/latte-pour.jpg", alt: "Atmars navy takeaway cup outdoors" },
+  { src: "/images/pancakes.jpg", alt: "Ricotta hotcakes with berries" },
+  { src: "/images/cafe-counter-customers.jpg", alt: "Atmars kiosk counter with customers" },
   { src: "/images/waffles.jpg", alt: "Waffles with maple syrup and blueberries" },
-  { src: "/images/takeaway-cup.jpg", alt: "Customer holding an Ariel's navy branded cup" },
+  { src: "/images/takeaway-cup.jpg", alt: "Customer holding an Atmars navy branded cup" },
 ];
 
 /** Gallery teaser strip (home.md §9). */

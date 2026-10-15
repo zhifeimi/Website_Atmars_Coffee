@@ -33,7 +33,7 @@ export default function VisitCta() {
           eyebrow="Find Us"
           title={
             <>
-              Hungry? <em className="italic text-butterscotch">We're just near Coles.</em>
+              Hungry? <em className="italic text-butterscotch">We're just near the food court.</em>
             </>
           }
         />
@@ -105,7 +105,7 @@ export default function VisitCta() {
               ))}
             </div>
             <p className="mt-6 font-sans text-sm text-cream/60">
-              Order direct on Bopple, or search “Ariel's Dapto” on your
+              Order direct on Bopple, or search “Atmars” on your
               favourite delivery app.
             </p>
           </div>

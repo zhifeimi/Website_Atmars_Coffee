@@ -150,7 +150,7 @@ export default function CoffeeSection() {
               data-coffee-reveal
               className="eyebrow eyebrow-on-navy inline-flex"
             >
-              Campos Coffee · La Marzocco
+              House roast · La Marzocco
             </span>
             <h2
               data-coffee-reveal
@@ -218,7 +218,7 @@ export default function CoffeeSection() {
                 <Coffee className="h-5 w-5" />
               </span>
               <p className="font-sans text-[15px] leading-relaxed text-cream/85">
-                Every cup starts on our La Marzocco with award-winning Campos
+                Every cup starts on our La Marzocco with our award-winning house-roasted
                 beans.
               </p>
             </div>
@@ -228,7 +228,7 @@ export default function CoffeeSection() {
               className="mt-6 inline-flex items-center gap-2 font-sans text-[11px] font-semibold uppercase tracking-[0.18em] text-gold/80"
             >
               <Star className="h-3 w-3 fill-gold/80" />
-              Award-winning Campos Coffee partner
+              Award-winning house roast
             </p>
           </div>
         </div>

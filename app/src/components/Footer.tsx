@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link to="/" aria-label="Ariel's Dapto — home">
+            <Link to="/" aria-label="Atmars — home">
               <LogoLockup />
             </Link>
             <p className="mt-5 max-w-[26ch] font-display text-lg italic leading-relaxed text-cream/80">
@@ -101,7 +101,7 @@ export default function Footer() {
                 href={SITE.instagram}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Instagram — @arielsdapto"
+                aria-label="Instagram — @atmars"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/60 text-gold transition-all duration-300 hover:bg-gold hover:text-navy-ink"
               >
                 <Instagram className="h-5 w-5" />
@@ -110,14 +110,14 @@ export default function Footer() {
                 href={SITE.facebook}
                 target="_blank"
                 rel="noreferrer"
-                aria-label="Facebook — Ariel's Dapto"
+                aria-label="Facebook — Atmars"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/60 text-gold transition-all duration-300 hover:bg-gold hover:text-navy-ink"
               >
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
             <p className="mt-5 text-sm text-cream/60">
-              @arielsdapto — daily specials, latte art &amp; community love.
+              @atmars — daily specials, latte art &amp; community love.
             </p>
           </div>
         </div>
@@ -126,10 +126,10 @@ export default function Footer() {
 
         <div className="mt-6 flex flex-col items-center justify-between gap-3 text-[13px] text-cream/60 sm:flex-row">
           <p>
-            © 2025 Ariel's Dapto · Part of {SITE.chain}
+            © 2025 {SITE.chain}
           </p>
           <p className="font-hand text-xl text-butterscotch">
-            Made with coffee in the Illawarra
+            A fictional café · demo site only
           </p>
         </div>
       </motion.div>

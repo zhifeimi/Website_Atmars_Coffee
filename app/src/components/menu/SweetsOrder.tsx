@@ -95,7 +95,7 @@ export default function SweetsOrder() {
                 <em className="italic text-butterscotch">order ahead.</em>
               </h3>
               <p className="mx-auto mt-4 max-w-[48ch] font-sans text-base font-light leading-relaxed text-cream/80">
-                Order direct on Bopple, or search “Ariel's Dapto” on your
+                Order direct on Bopple, or search “Atmars” on your
                 favourite delivery app.
               </p>
 

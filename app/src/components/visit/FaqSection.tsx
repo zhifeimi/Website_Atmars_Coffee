@@ -9,11 +9,11 @@ import SectionHeading from "@/components/SectionHeading";
 const FAQS = [
   {
     q: "Do you serve breakfast all day?",
-    a: "Yes — the full breakfast menu runs from open to close, seven days. Big Breakfast at 2:45pm? Absolutely.",
+    a: "Yes — the full breakfast menu runs from open to close, seven days. Island Big Breakfast at 2:45pm? Absolutely.",
   },
   {
     q: "What coffee do you use?",
-    a: "Award-winning Campos Coffee, poured on our La Marzocco. We also do a chai that's been called Australia's favourite.",
+    a: "Award-winning house-roasted coffee, poured on our La Marzocco. We also brew our own chai from whole spices.",
   },
   {
     q: "Can I order ahead?",
@@ -21,7 +21,7 @@ const FAQS = [
   },
   {
     q: "Is there parking?",
-    a: "Free undercover parking at Dapto Mall, off the Princes Highway. We're on the Ground Floor near Coles.",
+    a: "Free undercover parking at Null Island Mall, off Virtual Street. We're on the Ground Floor near the food court.",
   },
   {
     q: "Do you cater for kids?",

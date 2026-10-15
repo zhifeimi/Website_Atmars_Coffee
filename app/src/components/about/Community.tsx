@@ -108,7 +108,7 @@ export default function Community() {
                     href={SITE.instagram}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Instagram — @arielsdapto"
+                    aria-label="Instagram — @atmars"
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/60 text-gold transition-all duration-300 hover:bg-gold hover:text-navy-ink"
                   >
                     <Instagram className="h-4 w-4" />
@@ -117,7 +117,7 @@ export default function Community() {
                     href={SITE.facebook}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Facebook — Ariel's Dapto"
+                    aria-label="Facebook — Atmars"
                     className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/60 text-gold transition-all duration-300 hover:bg-gold hover:text-navy-ink"
                   >
                     <Facebook className="h-4 w-4" />

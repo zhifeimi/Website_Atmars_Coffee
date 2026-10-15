@@ -20,49 +20,52 @@ type Dish = {
 
 const DISHES: Dish[] = [
   {
-    name: "Ariel's Benni",
-    price: "18.90",
-    desc: "Two poached free-range eggs, wilted spinach & our saffron hollandaise on artisan sourdough.",
-    img: "/images/ariels-benny.jpg",
-    alt: "Ariel's Benni — poached eggs with saffron hollandaise on sourdough",
+    name: "Meridian Benedict",
+    price: "19.50",
+    desc: "Two poached free-range eggs, wilted greens & golden turmeric hollandaise on toasted sourdough.",
+    img: "/images/atmars-benny.jpg",
+    alt: "Meridian Benedict — poached eggs with golden hollandaise on sourdough",
     signature: true,
     tag: "the signature",
     tagColor: "butterscotch",
   },
   {
-    name: "Big Breakfast",
-    price: "15.90",
-    desc: "Two free-range eggs, bacon, chorizo, hash brown, grilled tomato, spinach & mushrooms on Brasserie sourdough.",
+    name: "Island Big Breakfast",
+    price: "21.00",
+    desc: "Eggs your way, smoky bacon, pork & fennel sausage, potato rosti, roast tomato & field mushrooms.",
     img: "/images/big-breakfast.jpg",
     alt: "Full big breakfast plate with eggs, bacon, tomato and mushrooms",
   },
   {
-    name: "Buttermilk Pancakes",
-    desc: "House-made, stacked with berries & butterscotch sauce.",
+    name: "Ricotta Hotcake Tower",
+    price: "18.50",
+    desc: "Three fluffy ricotta hotcakes, mixed berries, mascarpone & warm maple.",
     img: "/images/pancakes.jpg",
-    alt: "Buttermilk pancakes stacked with berries and dripping sauce",
+    alt: "Hotcakes stacked with berries and dripping sauce",
     signature: true,
-    tag: "10/10!!",
+    tag: "weekend favourite",
     tagColor: "berry",
   },
   {
-    name: "Breakfast Burrito",
-    price: "17.50",
-    desc: "Tomato salsa, avo, rice, corn, beans & cheese — wrapped and grilled.",
+    name: "Equator Burrito",
+    price: "17.90",
+    desc: "Scrambled eggs, black beans, charred corn, pico de gallo, avocado & cheddar — grilled.",
     img: "/images/hero-burrito.jpg",
-    alt: "Breakfast burrito in Ariel's navy branded wrap",
+    alt: "Equator Burrito half-wrapped in Atmars navy paper",
   },
   {
-    name: "Nutella Waffle",
-    desc: "House-made waffles, Nutella, butterscotch & berry compote, fresh strawberries.",
+    name: "Blueberry Maple Waffle",
+    price: "17.90",
+    desc: "House-made Belgian waffle, blueberries, maple syrup & vanilla bean cream.",
     img: "/images/waffles.jpg",
     alt: "Waffles with maple syrup and blueberries, overhead",
   },
   {
-    name: "Ariel's Cheeseburger",
-    desc: "100% Australian Angus beef, American cheese, tomato, pickles, lettuce.",
+    name: "Orbit Smash Burger",
+    price: "19.90",
+    desc: "Double smashed beef, aged cheddar, pickles, onion jam & house sauce on a milk bun.",
     img: "/images/cheeseburger.jpg",
-    alt: "Ariel's cheeseburger with melty cheese, close-up",
+    alt: "Orbit Smash Burger with melty cheese, close-up",
   },
 ];
 
@@ -219,7 +222,7 @@ export default function Signatures() {
         <div className="flex flex-col justify-center lg:pr-14">
           <span className="eyebrow eyebrow-on-navy">House Signatures</span>
           <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.75rem)] font-semibold leading-[1.08] text-cream">
-            The dishes Dapto{" "}
+            The dishes Null Island{" "}
             <em className="italic text-butterscotch">keeps talking about.</em>
           </h2>
           <p className="mt-5 max-w-[42ch] font-sans text-[1.05rem] leading-[1.7] text-cream/85">

@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Star } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import CoffeeRing from "@/components/CoffeeRing";
 import { SITE } from "@/lib/site";
@@ -26,7 +26,6 @@ type Platform = {
   href: string;
   hero?: boolean;
   badge?: string;
-  rating?: { score: string; count: string };
 };
 
 const PLATFORMS: Platform[] = [
@@ -41,13 +40,11 @@ const PLATFORMS: Platform[] = [
     name: "Uber Eats",
     tagline: "Delivery",
     href: "https://www.ubereats.com/",
-    rating: { score: "4.5", count: "180+" },
   },
   {
     name: "DoorDash",
     tagline: "Delivery",
     href: "https://www.doordash.com/",
-    rating: { score: "4.6", count: "200+" },
   },
   {
     name: "Hey You",
@@ -95,16 +92,6 @@ function PlatformCard({ p, index }: { p: Platform; index: number }) {
         )}
       >
         {p.tagline}
-        {p.rating && (
-          <>
-            {" · rated "}
-            <span className="inline-flex translate-y-[2px] items-center gap-1 font-semibold text-gold">
-              {p.rating.score}
-              <Star className="h-3.5 w-3.5 fill-gold text-gold" />
-            </span>{" "}
-            <span className="text-cream/60">({p.rating.count} reviews)</span>
-          </>
-        )}
       </span>
       {p.badge && (
         <span className="relative mt-4 inline-flex w-fit rounded-full bg-navy-ink/15 px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-navy-ink">
@@ -158,7 +145,7 @@ export default function OrderPanel() {
                   <em className="italic text-butterscotch">your way.</em>
                 </>
               }
-              lead="Skip the queue with order-ahead, or get Ariel's delivered to your door."
+              lead="Skip the queue with order-ahead, or get Atmars delivered to your door."
               className="[&_h2]:text-[clamp(2rem,4vw,3rem)]"
             />
 

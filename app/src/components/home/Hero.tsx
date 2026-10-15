@@ -108,7 +108,7 @@ export default function Hero() {
         style={{ writingMode: "vertical-rl" }}
       >
         <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.4em] text-cream/40">
-          Ariel's — My Local Café
+          Atmars — A Virtual Café
         </span>
       </div>
 
@@ -120,7 +120,7 @@ export default function Hero() {
         <div className="max-w-[720px]">
           <span className="inline-flex items-center gap-4 font-sans text-xs font-semibold uppercase tracking-[0.28em] text-gold">
             <span data-hero-rule className="block h-[1.5px] w-12 bg-gold" />
-            Dapto Mall · Illawarra · Est 2015
+            Null Island Mall · 0°N 0°E · Est 2019
           </span>
           <h1
             ref={h1Ref}
@@ -134,8 +134,8 @@ export default function Hero() {
             data-hero-fade
             className="mt-6 max-w-[52ch] font-sans text-xl font-light leading-[1.65] text-cream/90 opacity-0"
           >
-            Award-winning Campos coffee, all-day breakfast and our famous
-            waffles — served with a smile inside Dapto Mall.
+            Award-winning house-roasted coffee, all-day breakfast and our famous
+            waffles — served with a smile inside Null Island Mall.
           </p>
           <div data-hero-fade className="mt-9 flex flex-wrap gap-4 opacity-0">
             <Link to="/menu" className="btn-gold group">

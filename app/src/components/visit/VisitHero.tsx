@@ -109,20 +109,20 @@ export default function VisitHero() {
               data-visit-rule
               className="block h-[1.5px] w-12 origin-left scale-x-0 bg-gold"
             />
-            Visit · Dapto Mall
+            Visit · Null Island Mall
           </span>
           <h1
             ref={h1Ref}
             className="mt-6 overflow-hidden whitespace-pre-wrap pb-[0.15em] -mb-[0.15em] font-display text-[clamp(2.75rem,6vw,5rem)] font-semibold leading-[1.02] tracking-[-0.01em] text-cream"
           >
             Right in the{" "}
-            <em className="italic text-butterscotch">heart of Dapto.</em>
+            <em className="italic text-butterscotch">heart of Null Island.</em>
           </h1>
           <p
             data-visit-fade
             className="mt-6 max-w-[46ch] font-sans text-xl font-light leading-[1.65] text-cream/90 opacity-0"
           >
-            Kiosk K105, Ground Floor, Dapto Mall — near Coles. Come hungry.
+            Kiosk K105, Ground Floor, Null Island Mall — near the food court. Come hungry.
           </p>
           <span data-visit-pill className="mt-8 inline-block opacity-0">
             <OpenNowPill />

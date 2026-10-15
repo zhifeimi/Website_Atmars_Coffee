@@ -44,7 +44,7 @@ export default function AboutCta() {
           transition={{ duration: 0.7, delay: 0.25, ease: EASE }}
           className="mt-4 font-sans text-xl font-light leading-[1.65] text-cream/80"
         >
-          Kiosk K105, Dapto Mall — near Coles.
+          Kiosk K105, Null Island Mall — near the food court.
         </motion.p>
         <div className="mt-9 flex flex-wrap justify-center gap-4">
           <motion.div

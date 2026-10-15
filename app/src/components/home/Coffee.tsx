@@ -7,12 +7,12 @@ import Steam from "@/components/Steam";
 import CoffeeRing from "@/components/CoffeeRing";
 
 const DRINKS = [
-  { name: "Flat White", price: "5.00" },
-  { name: "Cappuccino", price: "5.00" },
-  { name: "Chai Latte", price: "5.50", note: "pair it with house banana bread" },
+  { name: "Flat White", price: "5.20" },
+  { name: "Cappuccino", price: "5.20" },
+  { name: "Spiced Chai Latte", price: "5.90", note: "pair it with our date & walnut loaf" },
 ];
 
-/** The Coffee — moody Campos feature (home.md §6). */
+/** The Coffee — moody coffee feature (home.md §6). */
 export default function Coffee() {
   const root = useRef<HTMLElement>(null);
 
@@ -89,13 +89,12 @@ export default function Coffee() {
             <span className="eyebrow eyebrow-on-navy">The Coffee</span>
             <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.75rem)] font-semibold leading-[1.08] text-cream">
               Poured on a La Marzocco.{" "}
-              <em className="italic text-butterscotch">Powered by Campos.</em>
+              <em className="italic text-butterscotch">Roasted in-house.</em>
             </h2>
             <p className="mt-5 max-w-[48ch] font-sans text-[1.05rem] leading-[1.7] text-cream/85">
-              We serve award-winning Campos Coffee — roasted with obsession,
+              We serve our award-winning house roast — roasted with obsession,
               extracted with care. Every cup starts on our La Marzocco, and if
-              chai is more your speed, ours has been called Australia's
-              favourite.
+              chai is more your speed, ours is brewed from whole spices.
             </p>
 
             <ul data-drink-list className="mt-8 space-y-4">

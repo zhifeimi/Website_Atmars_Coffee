@@ -84,7 +84,7 @@ export default function AboutHero() {
       <div className="container-site relative z-10 pb-16 pt-32 text-center md:pt-36">
         <span className="inline-flex items-center gap-4 font-sans text-xs font-semibold uppercase tracking-[0.28em] text-gold">
           <span data-about-rule className="block h-[1.5px] w-12 bg-gold" />
-          Family-owned · Illawarra · Est 2015
+          Family-owned · Null Island · Est 2019
           <span data-about-rule className="block h-[1.5px] w-12 bg-gold" />
         </span>
         <h1
@@ -98,8 +98,8 @@ export default function AboutHero() {
           data-about-fade
           className="mx-auto mt-6 max-w-[56ch] font-sans text-xl font-light leading-[1.65] text-cream/85 opacity-0"
         >
-          Seven cafés, one family, and a simple promise made in 2015 — serve
-          the Illawarra food and coffee we'd proudly serve our own.
+          Three cafés, one family, and a simple promise made in 2019 — serve
+          the island food and coffee we'd proudly serve our own.
         </p>
       </div>
     </section>

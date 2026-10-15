@@ -20,9 +20,9 @@ The full menu experience. It should read like a beautiful printed café menu —
 **Layout:** Navy-deep, height ~62vh. Background: `/images/latte-topdown.jpg` at low opacity (18%) with navy overlay and grain; a large faint coffee-ring watermark bottom-left.
 
 **Content (centered):**
-- Eyebrow: `ARIEL'S DAPTO · SERVED ALL DAY`
+- Eyebrow: `ATMARS · SERVED ALL DAY`
 - H1: "The *Menu*" ("Menu" italic butterscotch) — Cormorant, clamp(3rem, 6vw, 5.5rem), cream.
-- Subcopy: "All-day breakfast, house-made waffles, burgers and award-winning Campos coffee. Prices as marked in-store; delivery platforms may vary."
+- Subcopy: "All-day breakfast, house-made waffles, burgers and award-winning house-roasted coffee. Prices as marked in-store; delivery platforms may vary."
 - Two quick chips under subcopy: "⭐ = house signature" and "All-day breakfast until close".
 
 **Animation:** H1 char split (stagger 0.025s, y 110%→0). Eyebrow rule scaleX, subcopy fades up 24px with 0.3s delay. Background image slow scale 1→1.06 over first 80vh scroll (scrub). Scroll cue omitted (page is naturally scroll-driven).
@@ -44,17 +44,9 @@ The full menu experience. It should read like a beautiful printed café menu —
 **Layout:** Navy-deep section, grain. Split: left 45% sticky-ish image `/images/cappuccino-art.jpg` (rounded-[2rem], parallax), right 55% menu content. Eyebrow `CAMPOS COFFEE · LA MARZOCCO`, H2 "Coffee & *Tea*" in cream.
 
 **Menu list (rows: Cormorant name in cream — dotted gold leader — gold price; small Inter description cream @ 65% under selected items):**
-- Cappuccino — $5.00 — "silky frothed milk over espresso, a touch of chocolate"
-- Latte — $5.00
-- Flat White — $5.00
-- Mocha — marked **Popular** chip (berry)
-- Hot Chocolate
-- Chai Latte — Caveat annotation: "Australia's favourite — pair with banana bread" (butterscotch)
-- Iced Coffee — marked **Popular** chip — "coffee, milk & ice cream, whipped cream"
-- Iced Long Black
-- Iced Dirty Chai Latte
+- Items & prices: `COFFEE_ITEMS` in `app/src/components/menu/data.ts`.
 
-Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on our La Marzocco with award-winning Campos beans."
+Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on our La Marzocco with award-winning house-roasted beans."
 
 **Animation:** image clip-reveal + parallax (-8→8 yPercent scrub). Rows stagger in (y 24px, 0.07s) with leaders drawing scaleX 0→1. Popular chips pop (scale 0.8→1, spring) after their row. Steam blobs drift near the image.
 
@@ -62,20 +54,13 @@ Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on ou
 
 ## 4. All-Day Breakfast
 
-**Layout:** Cream background. Header row: eyebrow `SERVED ALL DAY`, H2 "All-Day *Breakfast*", body line "Free-range eggs, Brasserie sourdough, generous plates — from open to close."
+**Layout:** Cream background. Header row: eyebrow `SERVED ALL DAY`, H2 "All-Day *Breakfast*", body line "Free-range eggs, local sourdough, generous plates — from open to close."
 
 **Feature dish cards (3 across desktop, stack mobile — Dish Card component):**
-1. **Ariel's Benni ⭐** $18.90 — `/images/ariels-benny.jpg` — "Two poached free-range eggs, wilted spinach & Ariel's saffron hollandaise on artisan sourdough."
-2. **Big Breakfast ⭐** $15.90 — `/images/big-breakfast.jpg` — "Two free-range eggs, bacon, chorizo, hash brown, grilled tomato, spinach & mushrooms on Brasserie sourdough."
-3. **Breakfast Burrito ⭐** $17.50 — `/images/hero-burrito.jpg` — "Tomato salsa, avo, rice, corn, beans & cheese, wrapped and grilled."
+- See `BREAKFAST_FEATURES` in `app/src/components/menu/data.ts`.
 
 **Full list below (2-column menu rows, dotted leaders):**
-- Eggs on Toast — $13.90 — "free-range eggs on artisan toast"
-- Ariel's Bacon & Egg Roll ⭐ — $15.90 — "phenomenal – way more elevated than just a regular bacon and egg" (italic, quoting review)
-- Avocado Toast — $16.90 — "smashed avo on artisan toast" (with small `/images/avo-toast.jpg` 64px round thumb on row hover → persistent on mobile)
-- Ariel's Mighty Roll — "egg, bacon, hash brown, baby spinach, relish & cheddar in a Brasserie milk bun"
-- Green Power Plate — "eggs, halloumi, hash brown, grilled tomato, spinach & mushrooms"
-- Burrito ⭐ — $17.50
+- See `BREAKFAST_ITEMS` in `app/src/components/menu/data.ts` (the avo row keeps the `/images/avo-toast.jpg` 64px round hover thumb).
 
 **Animation:** header words stagger. Feature cards stagger up (y 48px, 0.12s) with image zoom-reveal (scale 1.15→1). List rows stagger 0.05s, leaders draw. Hover per design.md (row tint, price nudge, card lift + gold frame draw).
 
@@ -83,14 +68,12 @@ Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on ou
 
 ## 5. Waffles & Pancakes
 
-**Layout:** Cream-warm — this is the sweetest section, so add warmth: butterscotch radial glow behind header, berry accents. Header: eyebrow `HOUSE-MADE`, H2 "Waffles & *Pancakes*", Caveat annotation near H2: "the pancakes are 10/10!!" (berry, rotated -3° — direct review quote).
+**Layout:** Cream-warm — this is the sweetest section, so add warmth: butterscotch radial glow behind header, berry accents. Header: eyebrow `HOUSE-MADE`, H2 "Waffles & *Pancakes*", Caveat annotation near H2: "hotcake weekends, sorted" (berry, rotated -3°).
 
 **Feature cards (3 across):**
-1. **Buttermilk Pancakes ⭐** — `/images/pancakes.jpg` — "House-made, stacked high with berries & butterscotch sauce."
-2. **Nutella Waffle ⭐** — `/images/waffles.jpg` — "House-made waffles, Nutella, butterscotch & berry compote, fresh strawberries."
-3. **Waffle Brekky Stack** $20.90 — reuse `/images/waffles.jpg` crop or `/images/dapto-flatlay.png` — "Waffles, bacon, fried egg, hash brown, spinach & Ariel's hollandaise — sweet meets savoury."
+- See `WAFFLE_FEATURES` in `app/src/components/menu/data.ts`.
 
-**List row:** Cinnamon Waffles — "house-made, an Ariel's classic since 2015".
+**List row:** see `WAFFLE_ITEMS` in `app/src/components/menu/data.ts`.
 
 **Animation:** glow breathes (opacity 0.25→0.4 yoyo 5s). Cards stagger; on hover, butterscotch under-glow intensifies (shadow rgba caramel). Caveat annotation spring-pops after H2 (rotate -10°→-3°, scale 0.6→1).
 
@@ -101,11 +84,9 @@ Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on ou
 **Layout:** Cream. Header: eyebrow `FROM THE GRILL`, H2 "Burgers & *Lunch*".
 
 **Feature cards (3 across):**
-1. **Ariel's Cheeseburger ⭐** — `/images/cheeseburger.jpg` — "100% Australian Angus beef, American cheese, tomato, pickles, lettuce."
-2. **Fish & Chips** — `/images/fish-chips.jpg` — "Crisp battered fish, golden chips, fresh lemon."
-3. **Beef Salad Bowl** — `/images/beef-salad.jpg` — "Grilled beef over a fresh, generous garden bowl."
+- See `LUNCH_FEATURES` in `app/src/components/menu/data.ts`.
 
-**List row:** Sandwiches & Wraps · Open Melts · Bowls — "ask what's fresh today" (Caveat, butterscotch).
+**List row:** see `LUNCH_ITEMS` — "ask what's in the cabinet today" (Caveat, butterscotch).
 
 **Animation:** same pattern as §4 (staggered cards, drawing leaders, hover lifts).
 
@@ -116,14 +97,7 @@ Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on ou
 **Layout:** Navy section (lighter `--navy`, not deep) for contrast rhythm. Header: eyebrow `FRESH & COLD`, H2 "Smoothies, Juices & *Shakes*" in cream.
 
 **Content:** 2-column row list (cream text, gold prices):
-- Evergreen Smoothie — "kiwi, kale, mango, pineapple, coconut water"
-- Acai Berry Smoothie — "acai, blueberries, strawberries, raspberries, banana"
-- Power Breakfast Smoothie — "banana, oats, coconut, dates, pea protein"
-- Freshly Squeezed Orange / Apple Juice — $9.00
-- Milkshake — $7.50
-- Thickshake
-- Frappé — $8.50
-- Protein Shakes — "ask the team"
+- See `DRINK_ITEMS` in `app/src/components/menu/data.ts`.
 
 **Animation:** rows stagger with leader draws; a decorative gold fruit-slice-style circle SVG rotates slowly (20s linear) in the corner as a motif.
 
@@ -131,9 +105,9 @@ Side note card (glass navy, rounded-2xl, gold hairline): "Every cup starts on ou
 
 ## 8. Sweets & Extras + Order CTA
 
-**Layout:** Cream-warm, compact. List: Home-made Banana Bread — "beautiful with a chai latte" · Kids' menu — "little plates for little foodies" · Dagwood Dog — a local favourite.
+**Layout:** Cream-warm, compact. List: see `SWEET_ITEMS` in `app/src/components/menu/data.ts`.
 
-**Order CTA panel:** rounded-[2rem] navy-deep panel, background `/images/hero-iced-palms.jpg` at 15% + overlay. Centered: H3 (Cormorant cream, 2.25rem) "Skip the queue — *order ahead.*" + chip row: **Bopple** (primary, gold fill — https://www.bopple.app/arielsdapto/menu) · Uber Eats · DoorDash · Hey You (ghost gold). Small print: "Delivery prices may differ from in-store."
+**Order CTA panel:** rounded-[2rem] navy-deep panel, background `/images/hero-iced-palms.jpg` at 15% + overlay. Centered: H3 (Cormorant cream, 2.25rem) "Skip the queue — *order ahead.*" + chip row: **Bopple** (primary, gold fill — https://www.bopple.app/) · Uber Eats · DoorDash · Hey You (ghost gold). Small print: "Delivery prices may differ from in-store."
 
 **Animation:** panel slides up 60px, background subtle parallax. Chips stagger 0.08s; hover fill sweep. Primary Bopple chip has a gentle periodic pulse (box-shadow gold, 3s) to draw the eye.
 
@@ -157,4 +131,4 @@ Shared footer (design.md §6.2).
 
 ## Menu Page Asset Checklist
 
-`/images/latte-topdown.jpg` (hero bg) · `/images/cappuccino-art.jpg` (coffee) · `/images/ariels-benny.jpg`, `/images/big-breakfast.jpg`, `/images/hero-burrito.jpg`, `/images/avo-toast.jpg` (breakfast) · `/images/pancakes.jpg`, `/images/waffles.jpg`, `/images/dapto-flatlay.png` (waffles) · `/images/cheeseburger.jpg`, `/images/fish-chips.jpg`, `/images/beef-salad.jpg` (lunch) · `/images/hero-iced-palms.jpg` (order panel) · code SVGs: leaders, star chips, rotating fruit-slice motif, coffee ring.
+`/images/latte-topdown.jpg` (hero bg) · `/images/cappuccino-art.jpg` (coffee) · `/images/atmars-benny.jpg`, `/images/big-breakfast.jpg`, `/images/hero-burrito.jpg`, `/images/avo-toast.jpg` (breakfast) · `/images/pancakes.jpg`, `/images/waffles.jpg`, `/images/breakfast-flatlay.jpg` (waffles) · `/images/cheeseburger.jpg`, `/images/fish-chips.jpg`, `/images/beef-salad.jpg` (lunch) · `/images/hero-iced-palms.jpg` (order panel) · code SVGs: leaders, star chips, rotating fruit-slice motif, coffee ring.

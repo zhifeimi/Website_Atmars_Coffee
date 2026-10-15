@@ -1,4 +1,4 @@
-/** Menu data — all items, copy and prices per design/menu.md. */
+/** Menu data — all items, copy and prices per design/menu.md. Atmars is fictional: items and prices are invented. */
 
 export type MenuItem = {
   name: string;
@@ -37,176 +37,194 @@ export const CATEGORIES = [
 export const COFFEE_ITEMS: MenuItem[] = [
   {
     name: "Cappuccino",
-    price: "5.00",
-    desc: "Silky frothed milk over espresso, a touch of chocolate.",
+    price: "5.20",
+    desc: "Velvety foam over a double shot, dusted with cacao.",
   },
-  { name: "Latte", price: "5.00" },
-  { name: "Flat White", price: "5.00" },
-  { name: "Mocha", popular: true },
-  { name: "Hot Chocolate" },
+  { name: "Latte", price: "5.20" },
+  { name: "Flat White", price: "5.20" },
+  { name: "Long Black", price: "4.60" },
+  { name: "Dark Mocha", price: "6.40", popular: true },
   {
-    name: "Chai Latte",
-    note: "Australia's favourite — pair with banana bread",
+    name: "Spiced Chai Latte",
+    price: "5.90",
+    note: "brewed from whole spices — try it with the date loaf",
     noteColor: "butterscotch",
   },
   {
-    name: "Iced Coffee",
+    name: "Iced Latte Float",
+    price: "8.20",
     popular: true,
-    desc: "Coffee, milk & ice cream, whipped cream.",
+    desc: "Double shot, cold milk & a scoop of vanilla gelato.",
   },
-  { name: "Iced Long Black" },
-  { name: "Iced Dirty Chai Latte" },
+  { name: "Cold Brew Tonic", price: "6.90" },
+  { name: "Iced Matcha Latte", price: "7.20" },
 ];
 
 export const BREAKFAST_FEATURES: FeatureDish[] = [
   {
-    name: "Ariel's Benni",
-    price: "18.90",
-    desc: "Two poached free-range eggs, wilted spinach & Ariel's saffron hollandaise on artisan sourdough.",
-    img: "/images/ariels-benny.jpg",
-    alt: "Ariel's Benni — poached eggs with saffron hollandaise on sourdough",
+    name: "Meridian Benedict",
+    price: "19.50",
+    desc: "Two poached free-range eggs, wilted greens & golden turmeric hollandaise on toasted sourdough.",
+    img: "/images/atmars-benny.jpg",
+    alt: "Meridian Benedict — poached eggs with golden hollandaise on sourdough",
     signature: true,
   },
   {
-    name: "Big Breakfast",
-    price: "15.90",
-    desc: "Two free-range eggs, bacon, chorizo, hash brown, grilled tomato, spinach & mushrooms on Brasserie sourdough.",
+    name: "Island Big Breakfast",
+    price: "21.00",
+    desc: "Eggs your way, smoky bacon, pork & fennel sausage, potato rosti, roast tomato & field mushrooms with sourdough.",
     img: "/images/big-breakfast.jpg",
     alt: "Full big breakfast plate with eggs, bacon, tomato and mushrooms",
     signature: true,
   },
   {
-    name: "Breakfast Burrito",
-    price: "17.50",
-    desc: "Tomato salsa, avo, rice, corn, beans & cheese, wrapped and grilled.",
+    name: "Equator Burrito",
+    price: "17.90",
+    desc: "Scrambled eggs, black beans, charred corn, pico de gallo, avocado & cheddar, grilled in a navy wrap.",
     img: "/images/hero-burrito.jpg",
-    alt: "Breakfast burrito in Ariel's navy branded wrap",
+    alt: "Equator Burrito half-wrapped in Atmars navy paper",
     signature: true,
   },
 ];
 
 export const BREAKFAST_ITEMS: MenuItem[] = [
   {
-    name: "Eggs on Toast",
-    price: "13.90",
-    desc: "Free-range eggs on artisan toast.",
+    name: "Eggs Your Way",
+    price: "12.50",
+    desc: "Poached, fried or scrambled on sourdough or rye.",
   },
   {
-    name: "Ariel's Bacon & Egg Roll",
-    price: "15.90",
+    name: "Brioche Bacon & Egg",
+    price: "14.50",
+    desc: "Smoky bacon, fried egg, rocket & tomato jam on a toasted brioche bun.",
     signature: true,
-    quote: "phenomenal – way more elevated than just a regular bacon and egg",
   },
   {
-    name: "Avocado Toast",
-    price: "16.90",
-    desc: "Smashed avo on artisan toast.",
+    name: "Smashed Avo & Feta",
+    price: "17.80",
+    desc: "Lemony avo, whipped feta, dukkah & a poached egg on sourdough.",
     thumb: "/images/avo-toast.jpg",
     thumbAlt: "Smashed avocado toast with poached egg",
   },
   {
-    name: "Ariel's Mighty Roll",
-    desc: "Egg, bacon, hash brown, baby spinach, relish & cheddar in a Brasserie milk bun.",
+    name: "Salmon Rosti Stack",
+    price: "19.90",
+    desc: "Potato rosti, smoked salmon, poached egg, dill crème fraîche & capers.",
   },
   {
-    name: "Green Power Plate",
-    desc: "Eggs, halloumi, hash brown, grilled tomato, spinach & mushrooms.",
+    name: "Green Orbit Bowl",
+    price: "19.50",
+    desc: "Soft egg, grilled halloumi, quinoa, kale, edamame, avocado & tahini.",
   },
-  { name: "Burrito", price: "17.50", signature: true },
+  {
+    name: "Shakshuka",
+    price: "18.50",
+    desc: "Baked eggs in spiced tomato & capsicum, labneh, herbs & grilled flatbread.",
+  },
 ];
 
 export const WAFFLE_FEATURES: FeatureDish[] = [
   {
-    name: "Buttermilk Pancakes",
-    desc: "House-made, stacked high with berries & butterscotch sauce.",
+    name: "Ricotta Hotcake Tower",
+    price: "18.50",
+    desc: "Three fluffy ricotta hotcakes, mixed berries, mascarpone & warm maple.",
     img: "/images/pancakes.jpg",
-    alt: "Buttermilk pancakes stacked with berries and dripping sauce",
+    alt: "Hotcakes stacked with berries and dripping sauce",
     signature: true,
   },
   {
-    name: "Nutella Waffle",
-    desc: "House-made waffles, Nutella, butterscotch & berry compote, fresh strawberries.",
+    name: "Blueberry Maple Waffle",
+    price: "17.90",
+    desc: "House-made Belgian waffle, blueberries, maple syrup & vanilla bean cream.",
     img: "/images/waffles.jpg",
     alt: "Waffles with maple syrup and blueberries, overhead",
     signature: true,
   },
   {
-    name: "Waffle Brekky Stack",
-    price: "20.90",
-    desc: "Waffles, bacon, fried egg, hash brown, spinach & Ariel's hollandaise — sweet meets savoury.",
-    img: "/images/dapto-flatlay.png",
-    alt: "Dapto breakfast flat-lay with waffles, benedict and granola",
+    name: "Big Spread Waffle",
+    price: "22.50",
+    desc: "Waffle, smoky bacon, fried egg, rosti & hollandaise — sweet meets savoury.",
+    img: "/images/breakfast-flatlay.jpg",
+    alt: "Atmars breakfast flat-lay with waffles, benedict and granola",
   },
 ];
 
 export const WAFFLE_ITEMS: MenuItem[] = [
   {
-    name: "Cinnamon Waffles",
-    desc: "House-made, an Ariel's classic since 2015.",
+    name: "Churro Waffle",
+    price: "16.80",
+    desc: "Cinnamon sugar, dulce de leche & vanilla gelato.",
   },
 ];
 
 export const LUNCH_FEATURES: FeatureDish[] = [
   {
-    name: "Ariel's Cheeseburger",
-    desc: "100% Australian Angus beef, American cheese, tomato, pickles, lettuce.",
+    name: "Orbit Smash Burger",
+    price: "19.90",
+    desc: "Double smashed beef, aged cheddar, pickles, onion jam & house sauce on a milk bun.",
     img: "/images/cheeseburger.jpg",
-    alt: "Ariel's cheeseburger with melty cheese, close-up",
+    alt: "Orbit Smash Burger with melty cheese, close-up",
     signature: true,
   },
   {
-    name: "Fish & Chips",
-    desc: "Crisp battered fish, golden chips, fresh lemon.",
+    name: "Beer-Battered Fish & Chips",
+    price: "22.50",
+    desc: "Today's catch in a crisp batter, thick-cut chips, tartare & lemon.",
     img: "/images/fish-chips.jpg",
-    alt: "Fish and chips plate, bright and generous",
+    alt: "Fish and chips with lemon, tartare and a side salad",
   },
   {
-    name: "Beef Salad Bowl",
-    desc: "Grilled beef over a fresh, generous garden bowl.",
+    name: "Seared Beef Salad",
+    price: "21.50",
+    desc: "Seared sirloin, crisp leaves, cherry tomatoes, cucumber, red onion & sesame-lime dressing.",
     img: "/images/beef-salad.jpg",
-    alt: "Beef salad bowl with fresh greens",
+    alt: "Seared beef salad bowl with fresh greens",
   },
 ];
 
 export const LUNCH_ITEMS: MenuItem[] = [
   {
-    name: "Sandwiches & Wraps · Open Melts · Bowls",
-    note: "ask what's fresh today",
+    name: "Toasties · Wraps · Grain Bowls",
+    note: "ask what's in the cabinet today",
     noteColor: "butterscotch",
   },
 ];
 
 export const DRINK_ITEMS: MenuItem[] = [
   {
-    name: "Evergreen Smoothie",
-    desc: "Kiwi, kale, mango, pineapple, coconut water.",
+    name: "Green Lagoon Smoothie",
+    price: "10.50",
+    desc: "Spinach, pineapple, cucumber, mint & coconut water.",
   },
   {
-    name: "Acai Berry Smoothie",
-    desc: "Acai, blueberries, strawberries, raspberries, banana.",
+    name: "Berry Nebula Smoothie",
+    price: "10.50",
+    desc: "Mixed berries, banana, Greek yoghurt & honey.",
   },
   {
-    name: "Power Breakfast Smoothie",
-    desc: "Banana, oats, coconut, dates, pea protein.",
+    name: "Sunrise Oat Smoothie",
+    price: "10.50",
+    desc: "Banana, rolled oats, peanut butter, dates & oat milk.",
   },
-  { name: "Freshly Squeezed Orange / Apple Juice", price: "9.00" },
-  { name: "Milkshake", price: "7.50" },
-  { name: "Thickshake" },
-  { name: "Frappé", price: "8.50" },
-  { name: "Protein Shakes", desc: "Ask the team." },
+  { name: "Cold-Pressed Juice", price: "8.50", desc: "Orange, apple or watermelon & mint." },
+  { name: "Classic Milkshake", price: "7.90", desc: "Chocolate, caramel, vanilla or strawberry." },
+  { name: "Thickshake", price: "9.50" },
+  { name: "Iced Chocolate", price: "7.50" },
+  { name: "Protein Shake", price: "11.00", desc: "Whey or plant protein, banana & cacao." },
 ];
 
 export const SWEET_ITEMS: MenuItem[] = [
   {
-    name: "Home-made Banana Bread",
-    note: "beautiful with a chai latte",
+    name: "Date & Walnut Loaf",
+    price: "5.50",
+    note: "toasted, with whipped butter",
     noteColor: "butterscotch",
   },
   {
-    name: "Kids' Menu",
-    desc: "Little plates for little foodies.",
+    name: "Kids' Plates",
+    desc: "Little plates for little explorers.",
   },
-  { name: "Dagwood Dog", desc: "A local favourite." },
+  { name: "Salted Caramel Brownie", price: "5.90", desc: "Fudgy, gooey, generous." },
 ];
 
 export const ORDER_PLATFORMS = [

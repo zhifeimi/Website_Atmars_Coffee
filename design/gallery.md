@@ -17,9 +17,9 @@ A visual feast page — the purest "whet the appetite" moment on the site. Filte
 **Layout:** Navy-deep, compact (~48vh), grain. Centered content.
 
 **Content:**
-- Eyebrow: `GALLERY · ARIEL'S DAPTO`
+- Eyebrow: `GALLERY · ATMARS`
 - H1: "The *good stuff.*" ("good stuff" italic butterscotch)
-- Subcopy: "Real plates, real pours, real locals — straight from the kiosk at Dapto Mall."
+- Subcopy: "Real plates, real pours, real locals — straight from the kiosk at Null Island Mall."
 
 **Animation:** H1 char-split (stagger 0.025s), eyebrow rule draws, subcopy fades up. No background image (typographic hero; the photos below do the talking) — instead, three small gold coffee-ring SVGs drift in the corners (parallax 0.6×).
 
@@ -39,17 +39,17 @@ A visual feast page — the purest "whet the appetite" moment on the site. Filte
 
 **Tiles (filename — category — aspect — caption shown in lightbox):**
 1. `/images/cappuccino-art.jpg` — Coffee — 4:5 crop — "Rosetta, poured on the La Marzocco"
-2. `/images/pancakes.jpg` — Food — 3:2 — "Buttermilk pancakes, berries & butterscotch"
+2. `/images/pancakes.jpg` — Food — 3:2 — "Ricotta hotcakes, berries & maple"
 3. `/images/latte-pour.jpg` — Coffee — 4:5 — "The navy cup, out and about"
-4. `/images/dapto-flatlay.png` — Food — 3:2 — "The Dapto spread"
+4. `/images/breakfast-flatlay.jpg` — Food — 3:2 — "The Null Island spread"
 5. `/images/takeaway-cup.jpg` — Café Life — 4:5 — "Grabbed on the way through the mall"
-6. `/images/ariels-benny.jpg` — Food — 4:3 — "Ariel's Benni — the signature"
+6. `/images/atmars-benny.jpg` — Food — 4:3 — "Meridian Benedict — the signature"
 7. `/images/latte-duo.jpg` — Coffee — 4:3 — "Two lattes, gold pitchers"
 8. `/images/hero-burrito.jpg` — Food — 4:3 — "Breakfast burrito, wrapped in navy"
 9. `/images/cafe-counter-customers.jpg` — Café Life — 16:10 — "Morning rush at the kiosk"
 10. `/images/waffles.jpg` — Food — 3:2 — "Waffles, maple & blueberries"
 11. `/images/latte-topdown.jpg` — Coffee — 3:2 — "From above"
-12. `/images/cheeseburger.jpg` — Food — 3:2 — "The Angus cheeseburger"
+12. `/images/cheeseburger.jpg` — Food — 3:2 — "The Orbit Smash Burger"
 13. `/images/cafe-counter.jpg` — Café Life — 16:9 — "Our navy & gold home at K105"
 14. `/images/hero-iced-palms.jpg` — Coffee — 3:2 — "Iced coffee weather"
 
@@ -74,7 +74,7 @@ A visual feast page — the purest "whet the appetite" moment on the site. Filte
 
 ## 5. Instagram CTA
 
-**Layout:** Cream-warm band, centered. Gold Instagram line icon (large), H3 (Cormorant espresso, 2rem): "Fresh from the grid — *@arielsdapto*", body: "Follow along for daily specials, new menu drops and the occasional latte-art flex." Buttons: primary navy "Follow on Instagram ↗" (https://www.instagram.com/arielsdapto/) + ghost navy "Facebook ↗" (https://www.facebook.com/ArielsDapto/).
+**Layout:** Cream-warm band, centered. Gold Instagram line icon (large), H3 (Cormorant espresso, 2rem): "Fresh from the grid — *@atmars*", body: "Follow along for daily specials, new menu drops and the occasional latte-art flex." Buttons: primary navy "Follow on Instagram ↗" (https://www.instagram.com/) + ghost navy "Facebook ↗" (https://www.facebook.com/).
 
 **Animation:** icon draws in (stroke-dashoffset), heading words stagger, buttons fade up. Hover: Instagram icon shifts through a caramel→berry gradient tint.
 

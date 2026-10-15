@@ -65,17 +65,17 @@ function HeartHandsIcon() {
 const VALUES = [
   {
     title: "Honest Food",
-    body: "Free-range eggs, Brasserie sourdough, 100% Australian Angus beef, and portions that never leave you hungry. If we wouldn't serve it to our family, it doesn't leave the pass.",
+    body: "Free-range eggs, local sourdough, dry-aged beef, and portions that never leave you hungry. If we wouldn't serve it to our family, it doesn't leave the pass.",
     icon: <EggPlateIcon />,
   },
   {
     title: "Honest Coffee",
-    body: "Award-winning Campos beans on a La Marzocco, dialled in every morning. No shortcuts, no burnt milk — just a proper cup, every cup.",
+    body: "Award-winning house-roasted beans on a La Marzocco, dialled in every morning. No shortcuts, no burnt milk — just a proper cup, every cup.",
     icon: <CoffeeCupIcon />,
   },
   {
     title: "Honest People",
-    body: "We're your neighbours. We learn your name, your order, and how your kids take their babycino. That's the Illawarra way.",
+    body: "We're your neighbours. We learn your name, your order, and how your kids take their babycino. That's the Atmars way.",
     icon: <HeartHandsIcon />,
   },
 ];

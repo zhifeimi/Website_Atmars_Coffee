@@ -14,24 +14,23 @@ import { SITE } from "@/lib/site";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
-const MAP_EMBED =
-  "https://www.google.com/maps?q=Ariel%27s%20Dapto%2C%20Kiosk%20K105%2C%20Dapto%20Mall%2C%2075-87%20Princes%20Hwy%2C%20Dapto%20NSW%202530&z=16&output=embed";
+const MAP_EMBED = `${SITE.maps}&z=5&output=embed`;
 
 const TIPS: { icon: LucideIcon; lead: string; body: string }[] = [
   {
     icon: Store,
     lead: "In the mall",
-    body: "We're on the Ground Floor at Kiosk K105, right near Coles.",
+    body: "We're on the Ground Floor at Kiosk K105, right near the food court.",
   },
   {
     icon: Car,
     lead: "Parking",
-    body: "Free undercover parking at Dapto Mall — enter off the Princes Highway.",
+    body: "Free undercover parking at Null Island Mall — enter off Virtual Street.",
   },
   {
     icon: TrainFront,
     lead: "By train",
-    body: "Dapto Station is a short ride away; buses stop at the mall interchange.",
+    body: "Null Island Station is a short ride away; buses stop at the mall interchange.",
   },
   {
     icon: Baby,
@@ -85,7 +84,7 @@ export default function MapSection() {
               </div>
             ) : (
               <iframe
-                title="Map — Ariel's Dapto, Dapto Mall"
+                title="Map — Atmars, Null Island Mall"
                 src={MAP_EMBED}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

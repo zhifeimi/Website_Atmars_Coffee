@@ -8,33 +8,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ENTRIES = [
   {
-    year: "2015",
-    title: "The first Ariel's",
-    body: "The first Ariel's opens. One café, one family, one promise.",
+    year: "2019",
+    title: "The first Atmars",
+    body: "The first Atmars opens. One café, one family, one promise.",
     highlight: false,
   },
   {
-    year: "2015–2022",
-    title: "Seven locals",
-    body: "The family grows — seven cafés across the Illawarra, each one somebody's local.",
+    year: "2019–2023",
+    title: "Three locals",
+    body: "The family grows — three cafés across the island, each one somebody's local.",
     highlight: false,
   },
   {
-    year: "Dec 2022",
-    title: "Dapto opens",
-    body: "Ariel's Dapto opens at Kiosk K105, Dapto Mall. All-day breakfast and Campos coffee come to the heart of Dapto.",
+    year: "Mar 2023",
+    title: "Null Island opens",
+    body: "Atmars opens at Kiosk K105, Null Island Mall. All-day breakfast and house-roasted coffee come to the heart of Null Island.",
     highlight: true,
   },
   {
     year: "Today",
-    title: "Thank you, Dapto",
-    body: "4.6★ on DoorDash, 4.5★ on Uber Eats, and a community that keeps coming back. Thank you, Dapto.",
+    title: "Thank you, Null Island",
+    body: "Thousands of flat whites, a few hundred regulars, and a community that keeps coming back. Thank you, Null Island.",
     highlight: false,
     caveat: "we love our locals",
   },
 ];
 
-/** About §4 — scrub-drawn vertical timeline, 2015 → Dapto → today. */
+/** About §4 — scrub-drawn vertical timeline, 2019 → Null Island → today. */
 export default function Timeline() {
   const root = useRef<HTMLElement>(null);
 
@@ -103,7 +103,7 @@ export default function Timeline() {
             The Journey
           </span>
           <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.75rem)] font-semibold leading-[1.08] text-navy">
-            The road to <em className="italic text-caramel">Dapto.</em>
+            The road to <em className="italic text-caramel">Null Island.</em>
           </h2>
         </div>
 

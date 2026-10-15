@@ -4,22 +4,17 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { cn } from "@/lib/utils";
 
-type Review = { quote: string; source: "Google" | "DoorDash" | "Uber Eats" };
+/** Sample testimonials — Atmars is fictional, so are these. */
+type Review = { quote: string; name: string };
 
 const REVIEWS: Review[] = [
-  { quote: "The pancakes with berries and butterscotch sauce were 10/10!!", source: "DoorDash" },
-  { quote: "Bacon and Egg roll was phenomenal – way more elevated than just a regular bacon and egg.", source: "DoorDash" },
-  { quote: "We have been coming to Ariel's Dapto Mall since it opened… the awesome staff are so helpful and a pleasure to be served by.", source: "Google" },
-  { quote: "Food was super high quality, plentiful and delicious. The service was prompt and so patient with our kids.", source: "Google" },
-  { quote: "Everything was delicious and fast.", source: "Uber Eats" },
-  { quote: "Delicious food. Great choices and variety.", source: "Uber Eats" },
+  { quote: "The berry pancakes with butterscotch are dangerously good. Saturday mornings are sorted.", name: "Priya, weekend regular" },
+  { quote: "Best bacon & egg roll I've had — proper bread, proper bacon, zero shortcuts.", name: "Tom, weekday commuter" },
+  { quote: "They remember my order and my kids' names. It genuinely feels like our local.", name: "Hannah, mum of two" },
+  { quote: "Generous plates, quick service, and so patient with our little ones.", name: "Marco & Elena" },
+  { quote: "Smooth, never-bitter flat whites. I've stopped trying other places.", name: "Sam, flat white devotee" },
+  { quote: "Huge menu, everything fresh, and the waffles alone are worth the trip.", name: "Aisha, first visit" },
 ];
-
-const SOURCE_DOT: Record<Review["source"], string> = {
-  Google: "bg-[#4285F4]",
-  DoorDash: "bg-[#EB1700]",
-  "Uber Eats": "bg-[#06C167]",
-};
 
 function Stars() {
   return (
@@ -41,9 +36,9 @@ function ReviewCard({ review }: { review: Review }) {
         “{review.quote}”
       </p>
       <div className="mt-5 flex items-center gap-2.5">
-        <span className={cn("h-2 w-2 rounded-full", SOURCE_DOT[review.source])} />
+        <span className="h-2 w-2 rounded-full bg-gold" />
         <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-cream/70">
-          Verified {review.source} review
+          {review.name}
         </span>
       </div>
     </div>
@@ -88,32 +83,10 @@ export default function Reviews() {
           eyebrow="Word of Mouth"
           title={
             <>
-              Real reviews, <em className="italic text-caramel">real locals.</em>
+              Kind words, <em className="italic text-caramel">from our locals.</em>
             </>
           }
         />
-
-        {/* Platform rating chips */}
-        <div className="mt-7 flex flex-wrap justify-center gap-3">
-          {[
-            { name: "Google", rating: "4.0" },
-            { name: "Uber Eats", rating: "4.5" },
-            { name: "DoorDash", rating: "4.6" },
-          ].map((p) => (
-            <span
-              key={p.name}
-              className="glass-chip inline-flex items-center gap-2 rounded-full !border-navy/15 !bg-navy px-4 py-2 font-sans text-xs font-semibold text-cream"
-            >
-              {p.name}
-              <span className="tnum inline-flex items-center gap-1 text-gold">
-                <svg viewBox="0 0 24 24" className="h-3 w-3 fill-gold">
-                  <path d="M12 2l2.9 6.26 6.6.57-5 4.4 1.5 6.47L12 16.9 5.99 19.7l1.5-6.47-5-4.4 6.6-.57z" />
-                </svg>
-                {p.rating}
-              </span>
-            </span>
-          ))}
-        </div>
 
         {/* Carousel */}
         <div

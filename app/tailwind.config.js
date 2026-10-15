@@ -48,7 +48,7 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Ariel's brand palette (design.md §2)
+        // Atmars brand palette (design.md §2)
         navy: {
           DEFAULT: "#0d4074",
           deep: "#082c52",

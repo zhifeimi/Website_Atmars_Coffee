@@ -60,7 +60,7 @@ export default function InstagramCta() {
             className="mt-6 font-display text-[2rem] font-semibold leading-[1.15] text-espresso"
           >
             Fresh from the grid —{" "}
-            <em className="italic text-caramel">@arielsdapto</em>
+            <em className="italic text-caramel">@atmars</em>
           </motion.h3>
 
           <motion.p

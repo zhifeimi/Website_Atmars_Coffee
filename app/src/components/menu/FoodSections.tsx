@@ -36,7 +36,7 @@ export function BreakfastSection() {
               All-Day <em className="italic text-caramel">Breakfast</em>
             </>
           }
-          lead="Free-range eggs, Brasserie sourdough, generous plates — from open to close."
+          lead="Free-range eggs, local sourdough, generous plates — from open to close."
         />
 
         <DishGrid dishes={BREAKFAST_FEATURES} />
@@ -82,7 +82,7 @@ export function WafflesSection() {
             }}
             className="pointer-events-none absolute -right-2 top-1/2 font-hand text-2xl text-berry sm:right-0 lg:-right-16"
           >
-            the pancakes are 10/10!!
+            hotcake weekends, sorted
           </motion.span>
         </div>
 
