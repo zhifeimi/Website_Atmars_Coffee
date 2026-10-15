@@ -126,7 +126,7 @@ export default function CoffeeSection() {
               <div className="relative aspect-[4/3] overflow-hidden lg:aspect-[4/5]">
                 <img
                   data-coffee-img
-                  src="/images/cappuccino-art.jpg"
+                  src="/images/cappuccino-art.webp"
                   alt="Rosetta latte art in a grey ceramic cup on dark marble"
                   className="h-full w-full scale-[1.2] object-cover"
                   loading="lazy"

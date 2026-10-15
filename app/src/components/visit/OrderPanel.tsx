@@ -117,7 +117,7 @@ export default function OrderPanel() {
           {/* Background photo at 12% + warm glow */}
           <img
             aria-hidden
-            src="/images/hero-iced-palms.jpg"
+            src="/images/hero-iced-palms.webp"
             alt=""
             className="absolute inset-0 h-full w-full object-cover opacity-[0.12]"
           />

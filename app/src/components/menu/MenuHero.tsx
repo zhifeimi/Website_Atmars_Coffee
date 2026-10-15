@@ -76,7 +76,7 @@ export default function MenuHero() {
       <div className="absolute inset-0 overflow-hidden">
         <img
           data-hero-bg
-          src="/images/latte-topdown.jpg"
+          src="/images/latte-topdown.webp"
           alt=""
           aria-hidden
           className="h-full w-full object-cover opacity-[0.18]"

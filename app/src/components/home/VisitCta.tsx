@@ -76,7 +76,7 @@ export default function VisitCta() {
           className="relative mx-auto mt-16 max-w-4xl overflow-hidden rounded-[2rem] border border-[rgba(192,163,78,0.3)] bg-[rgba(8,44,82,0.55)] px-8 py-10 backdrop-blur-md md:px-14"
         >
           <img
-            src="/images/cafe-counter-customers.jpg"
+            src="/images/cafe-counter-customers.webp"
             alt=""
             aria-hidden
             className="absolute inset-0 h-full w-full object-cover opacity-[0.12]"

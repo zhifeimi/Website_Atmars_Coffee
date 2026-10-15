@@ -74,7 +74,7 @@ export default function Coffee() {
           <div className="espresso-glow absolute -inset-12" />
           <div data-coffee-img className="relative overflow-hidden rounded-[2rem] shadow-card-warm">
             <img
-              src="/images/cappuccino-art.jpg"
+              src="/images/cappuccino-art.webp"
               alt="Rosetta latte art in a grey ceramic cup on dark marble"
               className="h-[420px] w-full scale-[1.18] object-cover md:h-[560px]"
               loading="lazy"

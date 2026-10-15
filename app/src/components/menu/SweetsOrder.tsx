@@ -77,7 +77,7 @@ export default function SweetsOrder() {
               className="absolute -inset-y-[10%] inset-x-0"
             >
               <img
-                src="/images/hero-iced-palms.jpg"
+                src="/images/hero-iced-palms.webp"
                 alt=""
                 aria-hidden
                 loading="lazy"

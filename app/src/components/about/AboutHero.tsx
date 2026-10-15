@@ -72,7 +72,7 @@ export default function AboutHero() {
       <div className="absolute inset-0 overflow-hidden">
         <img
           data-about-bg
-          src="/images/cafe-counter.jpg"
+          src="/images/cafe-counter.webp"
           alt=""
           aria-hidden
           className="h-full w-full object-cover opacity-[0.22]"

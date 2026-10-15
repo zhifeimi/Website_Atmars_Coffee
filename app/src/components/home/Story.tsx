@@ -95,7 +95,7 @@ export default function Story() {
             className="relative"
           >
             <img
-              src="/images/breakfast-flatlay.jpg"
+              src="/images/breakfast-flatlay.webp"
               alt="The Null Island breakfast spread — waffles, eggs benedict and granola on the table"
               className="w-full rounded-[2rem] object-cover shadow-card-warm"
               loading="lazy"
@@ -109,7 +109,7 @@ export default function Story() {
             className="absolute -bottom-10 -left-[15%] w-[55%]"
           >
             <img
-              src="/images/latte-duo.jpg"
+              src="/images/latte-duo.webp"
               alt="Two lattes poured with gold pitchers"
               className="w-full rounded-2xl border-[3px] border-gold object-cover shadow-card"
               loading="lazy"

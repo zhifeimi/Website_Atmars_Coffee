@@ -47,7 +47,7 @@ export default function Community() {
           className="grain relative mt-14 overflow-hidden rounded-[2rem] bg-navy-deep p-10 shadow-card-warm md:p-14"
         >
           <img
-            src="/images/cafe-counter-customers.jpg"
+            src="/images/cafe-counter-customers.webp"
             alt=""
             aria-hidden
             className="absolute inset-0 h-full w-full object-cover opacity-[0.18]"

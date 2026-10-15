@@ -23,7 +23,7 @@ export const FILTERS: { key: GalleryFilter; label: string }[] = [
 export const TILES: GalleryTile[] = [
   {
     id: 1,
-    src: "/images/cappuccino-art.jpg",
+    src: "/images/cappuccino-art.webp",
     category: "coffee",
     aspect: "aspect-[4/5]",
     caption: "Rosetta, poured on the La Marzocco",
@@ -31,7 +31,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 2,
-    src: "/images/pancakes.jpg",
+    src: "/images/pancakes.webp",
     category: "food",
     aspect: "aspect-[3/2]",
     caption: "Ricotta hotcakes, berries & maple",
@@ -39,7 +39,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 3,
-    src: "/images/latte-pour.jpg",
+    src: "/images/latte-pour.webp",
     category: "coffee",
     aspect: "aspect-[4/5]",
     caption: "The navy cup, out and about",
@@ -47,7 +47,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 4,
-    src: "/images/breakfast-flatlay.jpg",
+    src: "/images/breakfast-flatlay.webp",
     category: "food",
     aspect: "aspect-[3/2]",
     caption: "The Null Island spread",
@@ -55,7 +55,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 5,
-    src: "/images/takeaway-cup.jpg",
+    src: "/images/takeaway-cup.webp",
     category: "cafe-life",
     aspect: "aspect-[4/5]",
     caption: "Grabbed on the way through the mall",
@@ -63,7 +63,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 6,
-    src: "/images/atmars-benny.jpg",
+    src: "/images/atmars-benny.webp",
     category: "food",
     aspect: "aspect-[4/3]",
     caption: "Meridian Benedict — the signature",
@@ -71,7 +71,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 7,
-    src: "/images/latte-duo.jpg",
+    src: "/images/latte-duo.webp",
     category: "coffee",
     aspect: "aspect-[4/3]",
     caption: "Two lattes, gold pitchers",
@@ -79,7 +79,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 8,
-    src: "/images/hero-burrito.jpg",
+    src: "/images/hero-burrito.webp",
     category: "food",
     aspect: "aspect-[4/3]",
     caption: "Breakfast burrito, wrapped in navy",
@@ -87,7 +87,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 9,
-    src: "/images/brunch-table.jpg",
+    src: "/images/brunch-table.webp",
     category: "food",
     aspect: "aspect-[16/10]",
     caption: "Brunch for the whole table",
@@ -95,7 +95,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 10,
-    src: "/images/waffles.jpg",
+    src: "/images/waffles.webp",
     category: "food",
     aspect: "aspect-[3/2]",
     caption: "Waffles, maple & blueberries",
@@ -103,7 +103,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 11,
-    src: "/images/latte-topdown.jpg",
+    src: "/images/latte-topdown.webp",
     category: "coffee",
     aspect: "aspect-[3/2]",
     caption: "From above",
@@ -111,7 +111,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 12,
-    src: "/images/cheeseburger.jpg",
+    src: "/images/cheeseburger.webp",
     category: "food",
     aspect: "aspect-[3/2]",
     caption: "The Orbit Smash Burger",
@@ -119,7 +119,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 13,
-    src: "/images/cafe-counter.jpg",
+    src: "/images/cafe-counter.webp",
     category: "cafe-life",
     aspect: "aspect-[16/9]",
     caption: "Our navy & gold home at K105",
@@ -127,7 +127,7 @@ export const TILES: GalleryTile[] = [
   },
   {
     id: 14,
-    src: "/images/hero-iced-palms.jpg",
+    src: "/images/hero-iced-palms.webp",
     category: "coffee",
     aspect: "aspect-[3/2]",
     caption: "Iced coffee weather",

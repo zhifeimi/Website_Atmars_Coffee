@@ -91,7 +91,7 @@ export default function Story() {
             className="relative overflow-hidden rounded-[2rem] shadow-card-warm"
           >
             <img
-              src="/images/hero-girl-cup.jpg"
+              src="/images/hero-girl-cup.webp"
               alt="A customer enjoying an Atmars coffee in the sun"
               className="h-[380px] w-full scale-[1.15] object-cover md:h-[480px]"
               loading="lazy"
@@ -102,7 +102,7 @@ export default function Story() {
             className="absolute -right-4 -top-10 w-[55%] overflow-hidden rounded-2xl border-[3px] border-gold shadow-card md:-right-8"
           >
             <img
-              src="/images/latte-pour.jpg"
+              src="/images/latte-pour.webp"
               alt="The navy Atmars takeaway cup, out and about"
               className="h-48 w-full object-cover md:h-60"
               loading="lazy"

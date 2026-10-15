@@ -93,7 +93,7 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <img
           data-hero-bg
-          src="/images/hero-iced-palms.jpg"
+          src="/images/hero-iced-palms.webp"
           fetchPriority="high"
           alt="Iced coffee against palm trees on a bright summer day"
           className="h-full w-full object-cover"

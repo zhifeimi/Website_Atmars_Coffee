@@ -127,7 +127,7 @@ export default function Craft() {
           <div className="espresso-glow absolute -inset-12" />
           <div data-craft-img className="relative overflow-hidden rounded-[2rem] shadow-card-warm">
             <img
-              src="/images/latte-duo.jpg"
+              src="/images/latte-duo.webp"
               alt="Two lattes beside gold pitchers on the counter"
               className="h-[380px] w-full scale-[1.18] object-cover md:h-[520px]"
               loading="lazy"

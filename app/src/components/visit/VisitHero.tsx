@@ -85,7 +85,7 @@ export default function VisitHero() {
       <div aria-hidden className="absolute inset-y-0 right-0 w-full md:w-[60%]">
         <img
           data-visit-bg
-          src="/images/takeaway-cup.jpg"
+          src="/images/takeaway-cup.webp"
           alt=""
           className="h-full w-full object-cover opacity-0"
           style={{ maskImage: MASK, WebkitMaskImage: MASK }}
