@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted Google Fonts (latin subset, variable weights). Vite hashes these
+   into /assets, so they share the immutable cache; index.html preloads the
+   three used above the fold. */
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("./assets/fonts/cormorant-garamond-v21-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url("./assets/fonts/cormorant-garamond-v21-latin-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("./assets/fonts/inter-v20-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url("./assets/fonts/caveat-v23-latin.woff2") format("woff2");
+}
+
 @layer base {
   :root {
     /* shadcn tokens remapped to brand */

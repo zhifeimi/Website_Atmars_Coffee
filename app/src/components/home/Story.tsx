@@ -96,6 +96,8 @@ export default function Story() {
           >
             <img
               src="/images/breakfast-flatlay.webp"
+              srcSet="/images/breakfast-flatlay-480.webp 480w, /images/breakfast-flatlay-720.webp 720w, /images/breakfast-flatlay-1080.webp 1080w, /images/breakfast-flatlay.webp 1536w"
+              sizes="(min-width: 1024px) 34vw, 90vw"
               alt="The Null Island breakfast spread — waffles, eggs benedict and granola on the table"
               className="w-full rounded-[2rem] object-cover shadow-card-warm"
               loading="lazy"
@@ -110,6 +112,8 @@ export default function Story() {
           >
             <img
               src="/images/latte-duo.webp"
+              srcSet="/images/latte-duo-480.webp 480w, /images/latte-duo-720.webp 720w, /images/latte-duo-1080.webp 1080w, /images/latte-duo.webp 1536w"
+              sizes="(min-width: 1024px) 19vw, 50vw"
               alt="Two lattes poured with gold pitchers"
               className="w-full rounded-2xl border-[3px] border-gold object-cover shadow-card"
               loading="lazy"
